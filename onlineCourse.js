@@ -41,39 +41,47 @@ function validateEnrollment() {
 
     
     if (!namePattern.test(name)) {
+        console.log("Name validation failed");
         alert("Name must contain only letters.");
         return;
     }
 
     
     if (!emailPattern.test(email)) {
+        console.log("Email validation failed");
         alert("Please enter a valid email.");
         return;
     }
 
     
     if (course === "") {
+        console.log("Course validation failed");
         alert("Please select a course.");
         return;
     }
 
     
     if (!modeOnline && !modeOffline) {
+        console.log("Mode validation failed");
         alert("Please select mode of study.");
         return;
     }
 
     
     if (!experienceYes && !experienceNo) {
+        console.log("Experience validation failed");
         alert("Please select if you have previous experience.");
         return;
     }
 
     
     if (experienceYes && experienceDetails === "") {
+        console.log("Experience details validation failed");
         alert("Please provide your experience details.");
         return;
     }
 
+    console.log("All validations passed");
+    console.log("Enrollment Successful for : ", name, "Email: ", email);
     alert("Enrollment Successful!");
 }
