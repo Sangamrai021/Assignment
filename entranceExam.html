@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h2>Entrance Exam Registration Form</h2>
+
+    <form id="form_sangam_27">
+      <label>Full Name:</label><br />
+      <input type="text" id="fullname_sangam_27" name="fullname_sangam_27" />
+      <br /><br />
+
+      <label>Date of Birth:</label><br />
+      <input type="date" id="dob_sangam_27" name="dob_sangam_27" /><br /><br />
+
+      <!-- <label>Age:</label><br />
+      <input type="number" id="age_sangam_27" name="age_sangam_27" />
+      <br /><br /> -->
+
+      <label>Phone Number:</label><br />
+      <input type="text" id="phone_sangam_27" name="phone_sangam_27" />
+      <br /><br />
+
+      <label>Email Address:</label><br />
+      <input type="text" id="email_sangam_27" name="email_sangam_27" />
+      <br /><br />
+
+      <label>Gender:</label><br />
+      <input
+        type="radio"
+        id="male_sangam_27"
+        name="gender_sangam_27"
+        value="Male"
+      />
+      Male
+      <input
+        type="radio"
+        id="female_sangam_27"
+        name="gender_sangam_27"
+        value="Female"
+      />
+      Female
+      <br /><br />
+
+      <label>Exam Stream:</label><br />
+      <select id="stream_sangam_27" name="stream_sangam_27">
+        <option value="">--Select Stream--</option>
+        <option value="Science">Science</option>
+        <option value="Management">Management</option>
+        <option value="Arts">Arts</option>
+      </select>
+      <br /><br />
+
+      <input type="checkbox" id="agree_sangam_27" name="agree_sangam_27" />
+      I confirm all details are correct
+      <br /><br />
+
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <p id="message_sangam_27" style="color: green"></p>
+
+    <script src="entranceExam.js"></script>
+  </body>
+</html>
