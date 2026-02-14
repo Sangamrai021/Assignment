@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Enrollment Form</title>
+</head>
+
+<body>
+    <h2>Online Course Enrollment Form</h2>
+
+    <form id="form_sangam_27">
+
+
+        <label>Student Name:</label><br>
+        <input type="text" id="studentname_sangam_27" name="studentname_sangam_27"><br><br>
+
+
+        <label>Email:</label><br>
+        <input type="text" id="email_sangam_27" name="email_sangam_27"><br><br>
+
+
+        <label>Course Name:</label><br>
+        <select id="course_sangam_27" name="course_sangam_27">
+            <option value="">--Select Course--</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+        <br><br>
+
+
+        <label>Mode of Study:</label><br>
+        <input type="radio" id="online_sangam_27" name="mode_sangam_27" value="Online"> Online
+        <input type="radio" id="offline_sangam_27" name="mode_sangam_27" value="Offline"> Offline
+        <br><br>
+
+
+        <label>Previous Experience:</label><br>
+        <input type="radio" id="experience_yes_sangam_27" name="experience_sangam_27" value="Yes"> Yes
+        <input type="radio" id="experience_no_sangam_27" name="experience_sangam_27" value="No"> No
+        <br><br>
+
+
+        <label id="experienceLabel_sangam_27">Experience Details:</label><br>
+        <textarea id="experienceDetails_sangam_27" name="experienceDetails_sangam_27" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <button type="button" onclick="validateEnrollment()">Enroll</button>
+
+    </form>
+
+    <script src="onlineCourse.js"></script>
+</body>
+
+</html>
