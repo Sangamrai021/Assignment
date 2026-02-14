@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM Card Registration Form</title>
+</head>
+
+<body>
+    <h2>SIM Card Registration Form</h2>
+
+    <form id="form_sangam_27">
+
+
+        <label>Full Name:</label><br>
+        <input type="text" id="fullname_sangam_27" name="fullname_sangam_27">
+        <br><br>
+
+
+        <label>Citizenship Number:</label><br>
+        <input type="text" id="citizenship_sangam_27" name="citizenship_sangam_27" maxlength="20"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+        <br><br>
+
+
+        <label>SIM Type:</label><br>
+        <input type="radio" id="prepaid_sangam_27" name="simtype_sangam_27" value="Prepaid"> Prepaid
+
+        <input type="radio" id="postpaid_sangam_27" name="simtype_sangam_27" value="Postpaid"> Postpaid
+        <br><br>
+
+
+        <label>Date of Birth:</label><br>
+        <input type="date" id="dob_sangam_27" name="dob_sangam_27" max="">
+        <br><br>
+
+
+        <label>Nationality:</label><br>
+        <select id="nationality_sangam_27" name="nationality_sangam_27">
+            <option value="">--Select Nationality--</option>
+            <option value="Nepali">Nepali</option>
+            <option value="Indian">Indian</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+
+        <input type="checkbox" id="terms_sangam_27" name="terms_sangam_27">
+        Accept Terms & Conditions
+        <br><br>
+
+        <button type="button" onclick="validateSIM()">Register SIM</button>
+
+    </form>
+
+    <p id="message_sangam_27" style="color:green; font-weight:bold;"></p>
+
+
+    <script src="simForm.js"></script>
+</body>
+
+</html>
