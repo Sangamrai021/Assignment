@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Mark-sheet</title>
+</head>
+
+<body>
+  <h2>Student Mark Sheet Generator</h2>
+
+  <form id="form_sangam_27">
+
+
+    <label>Student Name:</label><br>
+    <input type="text" id="studentname_sangam_27" name="studentname_sangam_27"><br><br>
+
+
+    <label>Roll Number:</label><br>
+    <input type="number" id="roll_sangam_27" name="roll_sangam_27"><br><br>
+
+
+    <label>Marks in English:</label><br>
+    <input type="number" id="english_sangam_27" name="english_sangam_27" min="0" max="100"><br><br>
+
+
+    <label>Marks in Math:</label><br>
+    <input type="number" id="math_sangam_27" name="math_sangam_27" min="0" max="100"><br><br>
+
+
+    <label>Marks in Science:</label><br>
+    <input type="number" id="science_sangam_27" name="science_sangam_27" min="0" max="100"><br><br>
+
+    <button type="button" onclick="generateMarksheet()">Generate Marksheet</button>
+
+  </form>
+
+  <h3>Result</h3>
+  <p id="output_sangam_27"></p>
+
+  </form>
+  <script src="stuMarkSheet.js"></script>
+</body>
+
+</html>
