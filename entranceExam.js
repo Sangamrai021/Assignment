@@ -57,6 +57,5 @@ function validateForm() {
 
   setTimeout(function () {
     location.reload();
-    //location is define as a global variable in browser environment, it represents the current URL and provides methods to manipulate it.
   }, 5000);
 }
