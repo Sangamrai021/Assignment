@@ -10,12 +10,10 @@ function validateSIM() {
     let namePattern = /^[A-Za-z\s]+$/;
     let citizenshipPattern = /^\d{10,}$/;
 
-    
     if(name === "" || citizenship === "" || dob === "" || nationality === "") {
         alert("All fields are required.");
         return;
     }
-
     
     if(!namePattern.test(name)) {
         alert("Name must contain only letters.");
@@ -28,10 +26,8 @@ function validateSIM() {
         return;
     }
 
-    
     let birthDate = new Date(dob);
     let todayDate = new Date();
-
     let age = todayDate.getFullYear() - birthDate.getFullYear();
     let monthDiff = todayDate.getMonth() - birthDate.getMonth();
 
@@ -44,19 +40,16 @@ function validateSIM() {
         alert("Age must be 18 or above.");
         return;
     }
-
     
     if(!simType) {
         alert("Please select SIM type.");
         return;
     }
 
-    
     if(nationality === "") {
         alert("Please select nationality.");
         return;
     }
-
     
     if(!terms) {
         alert("You must accept Terms & Conditions.");
